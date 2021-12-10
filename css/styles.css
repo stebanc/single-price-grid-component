@@ -1,0 +1,138 @@
+/* Colors */
+/* Typography */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Karla", sans-serif;
+  background: #e5eff5;
+  font-size: 400;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  width: min(85%, 40rem);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 2.5rem;
+}
+.card__title {
+  font-weight: 700;
+  color: #2ab2af;
+  margin: 0;
+}
+.card__title--white {
+  color: white;
+  font-size: 1.2rem;
+}
+.card__subtitle {
+  font-weight: 700;
+  color: #c0df34;
+}
+.card__text {
+  line-height: 1.5;
+  font-weight: 400;
+  color: #98a6bd;
+  margin: 0;
+}
+.card__text--white {
+  color: white;
+}
+.card__currency {
+  font-size: 2rem;
+  font-weight: 700;
+}
+.card__price {
+  margin-bottom: 0.5rem;
+}
+.card__per {
+  color: #83e2e7;
+}
+.card__btn {
+  margin-top: 2rem;
+  width: 100%;
+  border-radius: 5px;
+  padding: 1rem;
+  background: #c0df34;
+  font-weight: 700;
+  color: white;
+  border: none;
+  box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.card--white {
+  background: white;
+  width: 100%;
+}
+.card--cyan {
+  background: #2ab2af;
+  color: white;
+  width: 50%;
+}
+.card--light-cyan {
+  background: #2ab2afcc;
+  color: white;
+  width: 50%;
+}
+
+.list {
+  font-size: 0.875rem;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: #e5eff5;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 1.25rem;
+  }
+  .card__title {
+    font-size: 1.25rem;
+  }
+  .card__subtitle {
+    font-size: 1rem;
+  }
+  .card__text {
+    font-size: 0.875rem;
+  }
+  .card__currency {
+    font-size: 1.5rem;
+  }
+  .card__price {
+    font-size: 1.5rem;
+  }
+  .card__per {
+    font-size: 1rem;
+  }
+  .card__btn {
+    font-size: 1rem;
+  }
+  .card--cyan {
+    width: 100%;
+  }
+  .card--light-cyan {
+    width: 100%;
+  }
+
+  .container {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

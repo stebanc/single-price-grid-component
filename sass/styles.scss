@@ -1,0 +1,136 @@
+@use 'variables' as v;
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: v.$font-family;
+  background: v.$light-gray;
+  font-size: 400;
+  position: relative;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.box {
+  width: min(85%, 40rem);
+  display: flex;
+  flex-wrap: wrap;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.card {
+  padding: 2.5rem;
+  &__title {
+    font-weight: 700;
+    color: v.$cyan;
+    margin: 0;
+    &--white {
+      color: white;
+      font-size: 1.2rem;
+    }
+  }
+  &__subtitle {
+    font-weight: 700;
+    color: v.$bright-yellow;
+  }
+  &__text {
+    line-height: 1.5;
+    font-weight: 400;
+    color: v.$grayish-blue;
+    margin: 0;
+    &--white {
+      color: white;
+    }
+  }
+  &__currency {
+    font-size: 2rem;
+    font-weight: 700;
+  }
+  &__price {
+    margin-bottom: 0.5rem;
+  }
+  &__per {
+    color: #83e2e7;
+  }
+  &__btn {
+    margin-top: 2rem;
+    width: 100%;
+    border-radius: 5px;
+    padding: 1rem;
+    background: v.$bright-yellow;
+    font-weight: 700;
+    color: white;
+    border: none;
+    box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12);
+  }
+  &--white {
+    background: white;
+    width: 100%;
+  }
+  &--cyan {
+    background: v.$cyan;
+    color: white;
+    width: 50%;
+  }
+  &--light-cyan {
+    background: #2ab2afcc;
+    color: white;
+    width: 50%;
+  }
+}
+
+.list {
+  font-size: 0.875rem;
+  list-style: none;
+  margin-bottom: 0;
+  padding-left: 0;
+  color: #e5eff5;
+  line-height: 1.5;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+    padding: 1.25rem;
+    &__title {
+      font-size: 1.25rem;
+    }
+    &__subtitle {
+      font-size: 1rem;
+    }
+    &__text {
+      font-size: 0.875rem;
+    }
+    &__currency {
+      font-size: 1.5rem;
+    }
+    &__price {
+      font-size: 1.5rem;
+    }
+    &__per {
+      font-size: 1rem;
+    }
+    &__btn {
+      font-size: 1rem;
+    }
+    &--cyan {
+      width: 100%;
+    }
+    &--light-cyan {
+      width: 100%;
+    }
+  }
+  .container {
+    padding-top: 4.25rem;
+    padding-bottom: 4.25rem;
+  }
+}
